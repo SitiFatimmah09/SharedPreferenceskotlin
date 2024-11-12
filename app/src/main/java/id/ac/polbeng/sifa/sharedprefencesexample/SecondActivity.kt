@@ -12,7 +12,7 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnLoad.setOnClickListener {
-            val filename = "$packageName-$ {MainActivity.RPL}"
+            val filename = "$packageName-${MainActivity.RPL}"
             val pref = getSharedPreferences(filename,
                 Context.MODE_PRIVATE)
             val firstName = pref.getString("firstName", "")

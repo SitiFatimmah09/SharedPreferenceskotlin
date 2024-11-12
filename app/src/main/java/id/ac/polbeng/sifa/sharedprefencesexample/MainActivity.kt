@@ -9,6 +9,9 @@ import id.ac.polbeng.sifa.sharedprefencesexample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    companion object {
+        const val RPL ="TESTFILE"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
